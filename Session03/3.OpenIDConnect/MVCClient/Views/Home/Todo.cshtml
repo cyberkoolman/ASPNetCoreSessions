@@ -1,0 +1,18 @@
+﻿@model List<MVCClient.Models.TodoItem>
+
+@{
+    ViewBag.Title = "Todo Page";
+    Layout = "_Layout";
+}
+
+<h2>Todo</h2>
+<table>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>Todo ID: @item.Id</td>
+            <td>Todo Name: @item.Name</td>
+            <td>Is Completed: @item.IsComplete</td>
+        </tr>
+    }
+</table>
