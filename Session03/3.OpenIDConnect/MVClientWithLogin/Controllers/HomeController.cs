@@ -11,11 +11,17 @@ public class HomeController : Controller
     private readonly IConfiguration _conf;
     private readonly ITokenService _tokenService;
 
-    public HomeController(ILogger<HomeController> logger, IConfiguration conf, ITokenService tokenService)
+    // public HomeController(ILogger<HomeController> logger, IConfiguration conf, ITokenService tokenService)
+    // {
+    //     _logger = logger;
+    //     _conf = conf;
+    //     _tokenService = tokenService;
+    // }
+
+    public HomeController(ILogger<HomeController> logger, IConfiguration conf)
     {
         _logger = logger;
         _conf = conf;
-        _tokenService = tokenService;
     }
 
     public IActionResult Index()

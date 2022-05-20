@@ -30,7 +30,7 @@ public class HomeController : Controller
     {
         using var client = new HttpClient();
         var token = await _tokenService.GetToken("todoapi.read");
-        client.SetBearerToken(token.AccessToken);
+        client.SetBearerToken(token.AccessToken);   // SetBearerToken from IdenityModel
 
         var apiEndpoint = _conf["API:endpoint"];
         var result = await client.GetAsync(apiEndpoint);

@@ -27,11 +27,10 @@ public static class Config
     public static IEnumerable<Client> Clients =>
         new Client[]
         {
-            // m2m client credentials flow client
             new Client
             {
-                ClientId = "m2m.client",
-                ClientName = "Client Credentials Client",
+                ClientId = "client001",
+                ClientName = "Application 01",
 
                 AllowedGrantTypes = GrantTypes.ClientCredentials,
 

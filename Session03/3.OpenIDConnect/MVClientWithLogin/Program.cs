@@ -2,8 +2,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.Configure<IdentityServerSettings>(builder.Configuration.GetSection("IdentityServerSettings"));
-builder.Services.AddSingleton<ITokenService, TokenService>();
+// builder.Services.Configure<TokenServerSettings>(builder.Configuration.GetSection("TokenServerSettings"));
+// builder.Services.AddSingleton<ITokenService, TokenService>();
 
 builder.Services.AddAuthentication(
   options =>

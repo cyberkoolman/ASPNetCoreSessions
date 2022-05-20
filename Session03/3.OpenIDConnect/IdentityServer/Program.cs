@@ -13,7 +13,7 @@ builder.Services.AddIdentityServer(options =>
 //   .AddInMemoryApiResources(new List<ApiResource>())
 //   .AddInMemoryApiScopes(new List<ApiScope>())
 //   .AddInMemoryIdentityResources(new List<IdentityResource>());
-}).AddTestUsers(new List<TestUser>())
+}).AddTestUsers(TestUsers.Users)
   .AddInMemoryClients(Config.Clients)
   .AddInMemoryApiResources(Config.ApiResources)
   .AddInMemoryApiScopes(Config.ApiScopes)

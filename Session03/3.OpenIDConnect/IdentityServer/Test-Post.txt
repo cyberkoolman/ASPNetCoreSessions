@@ -2,4 +2,4 @@ cd connect
 cd token
 post -h Content-Type=application/x-www-form-urlencoded
 
-client_id=m2m.client&scope=todoapi.read&client_secret=A0000000-B000-C000-D000-E00000000000&grant_type=client_credentials
+client_id=client001&scope=todoapi.read&client_secret=A0000000-B000-C000-D000-E00000000000&grant_type=client_credentials
