@@ -34,7 +34,6 @@ public class HomeController : Controller
         return View();
     }
 
-    [Authorize]
     public async Task<IActionResult> Todo()
     {
         using var client = new HttpClient();

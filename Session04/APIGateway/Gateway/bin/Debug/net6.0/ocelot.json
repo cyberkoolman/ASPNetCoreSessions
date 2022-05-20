@@ -1,0 +1,34 @@
+{
+    "GlobalConfiguration": {
+        "BaseUrl": "https://localhost:7000"
+    },
+    "Routes": [{
+        "UpstreamPathTemplate": "/weather/v1",
+        "UpstreamHttpMethod": ["Get"],
+        "DownstreamPathTemplate": "/api/weather/v1",
+        "DownstreamScheme": "https",
+        "DownstreamHostAndPorts": [{
+            "Host": "localhost",
+            "Port": 7001
+        }],
+        "FileCacheOptions": {
+            "TtlSeconds": 10
+          }        
+    },
+    {
+        "UpstreamPathTemplate": "/weather/v2",
+        "UpstreamHttpMethod": ["Get"],
+        "DownstreamPathTemplate": "/api/weather/v2",
+        "DownstreamScheme": "https",
+        "DownstreamHostAndPorts": [{
+            "Host": "localhost",
+            "Port": 7002
+        }],
+        // "RateLimitOptions": {
+        //     "EnableRateLimiting": true,
+        //     "Period": "10s",
+        //     "PeriodTimespan": 5,
+        //     "Limit": 3
+        // }
+    }]
+}

@@ -1,0 +1,28 @@
+{
+    "GlobalConfiguration": {
+        "BaseUrl": "https://localhost:7000"
+    },
+    "Routes": [{
+        "UpstreamPathTemplate": "/weather/v1",
+        "UpstreamHttpMethod": ["Get"],
+        "DownstreamPathTemplate": "/api/weather/v1",
+        "DownstreamScheme": "https",
+        "DownstreamHostAndPorts": [{
+            "Host": "localhost",
+            "Port": 7001
+        }]
+    },
+    {
+        "UpstreamPathTemplate": "/weather/v2",
+        "DownstreamPathTemplate": "/api/weather/v2",
+        "DownstreamScheme": "https",
+        "DownstreamHostAndPorts": [{
+            "Host": "localhost",
+            "Port": 7002
+        }],
+        "AuthenticationOptions": {
+            "AuthenticationProviderKey": "api_auth_scheme",
+            "AllowedScopes": []
+        }         
+    }]
+}
