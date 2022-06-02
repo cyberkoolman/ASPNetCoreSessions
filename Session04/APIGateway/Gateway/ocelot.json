@@ -13,7 +13,7 @@
         }],
         "FileCacheOptions": {
             "TtlSeconds": 10
-          }        
+          }
     },
     {
         "UpstreamPathTemplate": "/weather/v2",
@@ -24,11 +24,11 @@
             "Host": "localhost",
             "Port": 7002
         }],
-        // "RateLimitOptions": {
-        //     "EnableRateLimiting": true,
-        //     "Period": "10s",
-        //     "PeriodTimespan": 5,
-        //     "Limit": 3
-        // }
+        "RateLimitOptions": {
+            "EnableRateLimiting": true,
+            "Period": "10s",
+            "PeriodTimespan": 5,
+            "Limit": 3
+        }
     }]
 }

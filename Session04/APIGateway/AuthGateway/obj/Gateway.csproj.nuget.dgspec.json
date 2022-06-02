@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Proj\\ASPNetCoreSessions\\Session04\\APIGateway\\AuthGateway\\Gateway.csproj": {}
+    "C:\\Projects\\FISGlobal\\ASPNetCoreSessions\\Session04\\APIGateway\\AuthGateway\\Gateway.csproj": {}
   },
   "projects": {
-    "C:\\Proj\\ASPNetCoreSessions\\Session04\\APIGateway\\AuthGateway\\Gateway.csproj": {
+    "C:\\Projects\\FISGlobal\\ASPNetCoreSessions\\Session04\\APIGateway\\AuthGateway\\Gateway.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Proj\\ASPNetCoreSessions\\Session04\\APIGateway\\AuthGateway\\Gateway.csproj",
+        "projectUniqueName": "C:\\Projects\\FISGlobal\\ASPNetCoreSessions\\Session04\\APIGateway\\AuthGateway\\Gateway.csproj",
         "projectName": "Gateway",
-        "projectPath": "C:\\Proj\\ASPNetCoreSessions\\Session04\\APIGateway\\AuthGateway\\Gateway.csproj",
-        "packagesPath": "C:\\Users\\randypark\\.nuget\\packages\\",
-        "outputPath": "C:\\Proj\\ASPNetCoreSessions\\Session04\\APIGateway\\AuthGateway\\obj\\",
+        "projectPath": "C:\\Projects\\FISGlobal\\ASPNetCoreSessions\\Session04\\APIGateway\\AuthGateway\\Gateway.csproj",
+        "packagesPath": "C:\\Users\\ranpa\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\FISGlobal\\ASPNetCoreSessions\\Session04\\APIGateway\\AuthGateway\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\randypark\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ranpa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -75,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

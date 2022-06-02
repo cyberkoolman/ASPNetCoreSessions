@@ -1644,19 +1644,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\randypark\\.nuget\\packages\\": {}
+    "C:\\Users\\ranpa\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Proj\\ASPNetCoreSessions\\Session04\\APIGateway\\AuthGateway\\Gateway.csproj",
+      "projectUniqueName": "c:\\Projects\\FISGlobal\\ASPNetCoreSessions\\Session04\\APIGateway\\AuthGateway\\Gateway.csproj",
       "projectName": "Gateway",
-      "projectPath": "C:\\Proj\\ASPNetCoreSessions\\Session04\\APIGateway\\AuthGateway\\Gateway.csproj",
-      "packagesPath": "C:\\Users\\randypark\\.nuget\\packages\\",
-      "outputPath": "C:\\Proj\\ASPNetCoreSessions\\Session04\\APIGateway\\AuthGateway\\obj\\",
+      "projectPath": "c:\\Projects\\FISGlobal\\ASPNetCoreSessions\\Session04\\APIGateway\\AuthGateway\\Gateway.csproj",
+      "packagesPath": "C:\\Users\\ranpa\\.nuget\\packages\\",
+      "outputPath": "c:\\Projects\\FISGlobal\\ASPNetCoreSessions\\Session04\\APIGateway\\AuthGateway\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\randypark\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ranpa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1717,7 +1717,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

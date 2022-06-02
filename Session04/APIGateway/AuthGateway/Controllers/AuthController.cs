@@ -1,12 +1,20 @@
 namespace Gateway.Controllers
 {
     [ApiController]
+    [Route("api/auth")]
     public class AuthController : ControllerBase
     {
-        [HttpPost]
-        [Route("weather/v2")]
+        [HttpGet]
         [AllowAnonymous]
-        public ActionResult<AuthToken> GetAuthentication([FromBody] AuthUser user)
+        public ActionResult<AuthToken> Login()
+        {
+            var user = new AuthUser { Username = "Randy", Password = "908798"};
+            return new ApiTokenService().GenerateToken(user);
+        }
+
+        [HttpPost]
+        [AllowAnonymous]
+        public ActionResult<AuthToken> Login(AuthUser user)
         {
             if (user.Username != "weatherman" || user.Password != "weatherman")
             {
