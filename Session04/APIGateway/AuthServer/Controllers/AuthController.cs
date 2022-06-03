@@ -1,14 +1,14 @@
 namespace Gateway.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/auth")]
     public class AuthController : ControllerBase
     {
         [HttpGet]
         [AllowAnonymous]
         public ActionResult<AuthToken> Login()
         {
-            var user = new AuthUser { Username = "Randy", Password = "908798"};
+            var user = new AuthUser { Username = "weather", Password = "weather"};
             return new ApiTokenService().GenerateToken(user);
         }
 
@@ -16,7 +16,7 @@ namespace Gateway.Controllers
         [AllowAnonymous]
         public ActionResult<AuthToken> Login([FromBody] AuthUser user)
         {
-            if (user.Username != "weatherman" || user.Password != "weatherman")
+            if (user.Username != "weather" || user.Password != "weather")
             {
                 return BadRequest(new { message = "Username or Password is invalid" });
             }
