@@ -10,10 +10,7 @@
         "DownstreamHostAndPorts": [{
             "Host": "localhost",
             "Port": 7001
-        }],
-        "FileCacheOptions": {
-            "TtlSeconds": 10
-          }
+        }]
     },
     {
         "UpstreamPathTemplate": "/weather/v2",
@@ -23,12 +20,6 @@
         "DownstreamHostAndPorts": [{
             "Host": "localhost",
             "Port": 7002
-        }],
-        "RateLimitOptions": {
-            "EnableRateLimiting": true,
-            "Period": "10s",
-            "PeriodTimespan": 5,
-            "Limit": 3
-        }
+        }]
     }]
 }
