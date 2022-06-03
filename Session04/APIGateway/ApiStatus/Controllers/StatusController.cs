@@ -10,10 +10,6 @@ public class StatusController : ControllerBase
     [ResponseCache(NoStore =true, Location =ResponseCacheLocation.None)]
     public IActionResult Get()
     {
-        var random = new Random();
-        var list = new List<StatusCodeResult> { Ok(), NotFound() };
-        int index = random.Next(list.Count);
-
-        return list[index];
+        return Random.Shared.Next(2) == 1 ? Ok() : NotFound();
     }
 }
